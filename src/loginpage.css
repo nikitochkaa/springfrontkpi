@@ -1,0 +1,109 @@
+.lpheader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 40px;
+    background: #A1FFA1;
+}
+
+.name {
+    margin: 10px 30px;
+    font-weight: 700;
+    min-width: 1px;
+    font-size: 24px;
+    line-height: 22px;
+    outline: none;
+    position: relative;
+    justify-content: space-between;
+}
+
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
+.user {
+    position: relative;
+    float: right;
+}
+
+.login {
+    left: 0;
+    right: 0;
+    top: 40px;
+    position: absolute;
+    margin: 20px;
+    width: 100px;
+}
+.login input {
+    display: block;
+    font-size: 14px;
+    border: 2px solid #555;
+}
+
+.register {
+    position: absolute;
+    top: 40px;
+    left: 1320px;
+    margin: 20px;
+}
+
+.register a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+.enter {
+    position: absolute;
+    top: 63px;
+    left: 200px;
+    right: 0;
+    margin: 20px;
+    height: 18px;
+    width: 60px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.enter span {
+    font-size: 14px;
+}
+
+.enter:hover {
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.enter a:hover {
+    text-decoration: underline;
+}
+
+.guest {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 20px;
+    height: 18px;
+    width: 180px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.guest:hover {
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.guest span {
+    font-size: 14px;
+}
+
+
+
+
