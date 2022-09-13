@@ -14,48 +14,57 @@
     <title>React App</title>
 </head>
 <body>
+<header>
+            <div class="name">
+                <a href="#">Forum</a>
+            </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="#">Topics</a>
+            </li>
+            <li>
+                <a href="#">Log In</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 
 <div id="app" class="container">
 
-    <div class="loginpage">
+    <section class="loginpage">
+        <form action="" id="signup">
+            <div class="containerForm">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
 
-        <div class="lpheader">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
 
-            <div class="name">
-                <a href="#">ForumName</a>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
             </div>
+        </form>
 
-            <div class="user">
-                <span>User</span>
-            </div>
-
-        </div>
-
-        <div class="lplog">
-
-            <div class="register">
-                <a href="#">Зареєструватися</a>
-            </div>
-
-            <div class="login">
-                <input value="Логін"/>
-                <input value="Пароль"/>
-            </div>
-
-
-            <div class="enter">
-                <span>Ввійти</span>
-            </div>
-
-
-            <div class="guest">
-                <span>Продовжити як гість</span>
-            </div>
-
-        </div>
-
-    </div>
+    </section>
 
 </div>
 
