@@ -1,13 +1,13 @@
 import React from 'react';
 
-const SignUp = () => {
+const SignIn = () => {
     return (
         <div>
             <section className="loginpage">
                 <form action="" id="signup">
                     <div className="containerForm">
-                        <h1>Sign Up</h1>
-                        <p>Please fill in this form to create an account.</p>
+                        <h1>Sign In</h1>
+                        <p>Please log in to your account.</p>
                         <hr></hr>
 
                         <label><b>Email</b></label>
@@ -16,15 +16,11 @@ const SignUp = () => {
                         <label><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required></input>
 
-                        <label><b>Repeat Password</b></label>
-                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required></input>
-
-
                         <div className="clearfix">
-                            <a href="/signin">
-                                <button type="button" className="cancelbtn">Already have an account</button>
+                            <a href="/signup">
+                            <button type="button" className="cancelbtn">I don't have an account</button>
                             </a>
-                            <button type="submit" className="signupbtn">Sign Up</button>
+                            <button type="submit" className="signupbtn">Sign Ip</button>
                         </div>
                     </div>
                 </form>
@@ -34,4 +30,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default SignIn;

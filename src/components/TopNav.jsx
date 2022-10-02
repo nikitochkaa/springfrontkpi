@@ -1,22 +1,21 @@
 import React from 'react';
-import classes from "../styles/topnav.css";
 
 const TopNav = () => {
     return (
         <div className="header">
             <div className="name">
-                <a href="#">Forum</a>
+                <a href="/">Forum</a>
             </div>
             <nav>
                 <ul className="menu">
                     <li>
-                        <a href="#">News</a>
+                        <a href="/news">News</a>
                     </li>
                     <li>
                         <a href="#">Topics</a>
                     </li>
                     <li>
-                        <a href="#">Sign Up</a>
+                        <a href="/signin">Sign In</a>
                     </li>
                 </ul>
             </nav>

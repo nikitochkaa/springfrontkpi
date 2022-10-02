@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import {goodRusCounter} from "../grcounter";
-import classes from "../styles/News.css";
 
 
 const News = () => {
