@@ -1,6 +1,33 @@
 import React from 'react';
 
 const SignIn = () => {
+
+    // fetch('http://localhost:8080/auth/sign-up', {
+    //     headers,
+    //     method: 'POST',
+    //     body: JSON.stringify({
+    //         query: operationsDoc,
+    //         variables: variables,
+    //         operationName: operationName,
+    //     }),
+    // }).then(response => response.json())
+    //     .then(data => {
+    //         setState(data)
+    //     })
+    // fetch('http://localhost:8080/auth/sign-in', {
+    //         headers,
+    //         method: 'POST',
+    //         body: JSON.stringify({
+    //             query: operationsDoc,
+    //             variables: variables,
+    //             operationName: operationName,
+    //         }),
+    //     }).then(response => response.json())
+    //         .then(data => {
+    //             setState(data)
+    //         })
+
+
     return (
         <div>
             <section className="loginpage">
@@ -18,9 +45,9 @@ const SignIn = () => {
 
                         <div className="clearfix">
                             <a href="/signup">
-                            <button type="button" className="cancelbtn">I don't have an account</button>
+                                <button type="button" className="cancelbtn">I don't have an account</button>
                             </a>
-                            <button type="submit" className="signupbtn">Sign Ip</button>
+                            <button type="submit" className="signupbtn">Sign In</button>
                         </div>
                     </div>
                 </form>

@@ -28,14 +28,17 @@ const Main = () => {
                 <div className="topics">
                     <div className="topic">
                         <a className="topic-href" href="#">Тopic1</a>
-                        <span>Іванов Іван Іванович</span>
+                        <span>Кирилов Іван Валерійович</span>
                     </div>
                     <div className="topic">
                         <a className="topic-href" href="#">Тopic2</a>
-                        <span>Жигорін Жига Жигорович</span>
+                        <span>Онацький Микита Віталійович</span>
+                    </div>
+                    <div className="topic">
+                        <a className="topic-href" href="#">Тopic3</a>
+                        <span>Гуров Богдан Русланович</span>
                     </div>
                 </div>
-
             </div>
         </div>
     );
