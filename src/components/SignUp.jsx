@@ -1,4 +1,5 @@
 import React from 'react';
+import {signUp} from '../controllers/Auth';
 
 const SignUp = () => {
     return (
@@ -11,20 +12,20 @@ const SignUp = () => {
                         <hr></hr>
 
                         <label><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required></input>
+                        <input type="text" placeholder="Enter Email" id="email" required></input>
 
                         <label><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required></input>
+                        <input type="password" placeholder="Enter Password" id="psw" required></input>
 
                         <label><b>Repeat Password</b></label>
-                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required></input>
+                        <input type="password" placeholder="Repeat Password" id="psw-repeat" required></input>
 
 
                         <div className="clearfix">
                             <a href="/signin">
-                                <button type="button" className="cancelbtn">Already have an account</button>
+                                <button type="button" id="cancelbtn">Already have an account</button>
                             </a>
-                            <button type="submit" className="signupbtn">Sign Up</button>
+                            <button type="submit" onSubmit={signUp} id="signupbtn">Sign Up</button>
                         </div>
                     </div>
                 </form>

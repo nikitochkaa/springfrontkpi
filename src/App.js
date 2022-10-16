@@ -1,10 +1,11 @@
+import {useState} from "react";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import TopNav from "./components/TopNav";
 import Main from "./components/Main";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SingIn";
 import News from "./components/News";
-import {useState} from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import NewTopic from "./components/NewTopic";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/news" element={<News/>}></Route>
             <Route path="/signup" element={<SignUp/>}></Route>
             <Route path="/signin" element={<SignIn/>}></Route>
+            <Route path="/new" element={<NewTopic/>}></Route>
         </Routes>
       </div>
     </Router>
