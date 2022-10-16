@@ -20,9 +20,9 @@ const SignIn = () => {
 
                         <div className="clearfix">
                             <a href="/signup">
-                                <button type="button" id="cancelbtn">I don't have an account</button>
+                                <button type="button" className="button" id="cancelbtn">I don't have an account</button>
                             </a>
-                            <button type="submit" onSubmit={signIn} id="signupbtn">Sign In</button>
+                            <button type="submit" className="button" onSubmit={signIn} id="signupbtn">Sign In</button>
                         </div>
                     </div>
                 </form>

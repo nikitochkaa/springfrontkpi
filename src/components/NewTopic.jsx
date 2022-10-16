@@ -15,7 +15,7 @@ const NewTopic = () => {
                               required></textarea>
                 </li>
                 <li>
-                    <input type="submit" onSubmit={createNewTopic} value="Create"/>
+                    <input type="button" onClick={createNewTopic} value="Create"/>
                 </li>
             </ul>
         </form>

@@ -1,29 +1,33 @@
-export function getTopics() {
-    fetch('/topics/', {
+export async function getTopics() {
+    return fetch('/topics/', {
         method: 'GET',
     })
         .then(response => response.json())
-        .then(data => {
-            return data
-        })
-    const data = []
-    return data
 }
 
-export function createNewTopic() {
+export async function createNewTopic() {
     const title = (document.getElementById("new-topic-title") || {}).value || ''
     const description = (document.getElementById("new-topic-description") || {}).value || ''
-    const creatorUsername = 'nikitochkaa'
-    fetch('/topics/', {
+    const creatorUsername = 'bhurov'
+    await fetch('/topics/', {
+        headers: {
+            'Content-Type': 'application/json'
+        },
         method: 'POST',
         body: JSON.stringify({
-            title: title,
-            description: description,
-            creatorUsername: creatorUsername
+            title,
+            description,
+            creatorUsername
         }),
     })
-        .then(response => response.json())
-        .then(data => {
-            return data
-        })
+}
+export async function deleteTopicById() {
+
+    await fetch('/topics/', {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        method: 'DELETE',
+
+    })
 }

@@ -1,26 +1,18 @@
 import React, {useEffect, useState} from 'react'
 import {goodRusCounter} from "../grcounter";
-import {getTopics} from "../controllers/Topics";
+import {topicsTemplate} from "./topics.template";
+
+
 var parse = require('html-react-parser');
 
 const Main = () => {
-    function createTopic({title, creatorUsername}) {
-        return `
-            <div className="topic">
-                <a className="topic-href" href="#">${title}</a>
-                <strong>${creatorUsername}</strong>
-            </div>
-        `
-    }
-    const data = getTopics()
+    const [topics, setTopics] = useState([]);
+    useEffect(() => {topicsTemplate().then(data => {
+        console.log(data)
+        setTopics(data)
+    })},[])
 
-    const topics = parse(
-        data.map(createTopic)
-            .join('')
-    )
-
-    return (
-        <div>
+    return (<div>
             <a className="new-topic" href="/new">
                 <button className="new-topic-button" role="button">Create a<br/>new Topic</button>
             </a>
