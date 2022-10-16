@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const SignIn = () => {
 
@@ -14,24 +14,27 @@ const SignIn = () => {
     //     .then(data => {
     //         setState(data)
     //     })
-    // fetch('http://localhost:8080/auth/sign-in', {
-    //         headers,
-    //         method: 'POST',
-    //         body: JSON.stringify({
-    //             query: operationsDoc,
-    //             variables: variables,
-    //             operationName: operationName,
-    //         }),
-    //     }).then(response => response.json())
-    //         .then(data => {
-    //             setState(data)
-    //         })
-
+    function signIn() {
+        fetch('/auth/sign-in/', {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify({
+                username: "bhurov",
+                password: "qwerty123"
+            }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
 
     return (
         <div>
             <section className="loginpage">
-                <form action="" id="signup">
+                <form id="signup">
                     <div className="containerForm">
                         <h1>Sign In</h1>
                         <p>Please log in to your account.</p>
@@ -47,7 +50,7 @@ const SignIn = () => {
                             <a href="/signup">
                                 <button type="button" className="cancelbtn">I don't have an account</button>
                             </a>
-                            <button type="submit" className="signupbtn">Sign In</button>
+                            <button type="button" onClick={signIn} className="signupbtn">Sign In</button>
                         </div>
                     </div>
                 </form>
