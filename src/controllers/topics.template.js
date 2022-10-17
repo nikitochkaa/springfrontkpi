@@ -1,4 +1,4 @@
-import {getTopics} from "../controllers/Topics";
+import {getTopics} from "./Topics";
 import parse from "html-react-parser";
 
 export function topicsTemplate() {
@@ -11,21 +11,20 @@ export function topicsTemplate() {
             )
             resolve(topics)
         })
-
     })
 }
 
-function createTopic({title, creatorUsername}) {
+function createTopic({id, title, creatorUsername}) {
     return `
             <div className="topic">
-                <a className="topic-href" href="#">${title}</a>
+                <a className="topic-href" href="/topic/${id}">${title}</a>
                 <div className="topic-change-line">
                     <strong>${creatorUsername}</strong>
-                    <div onclick="deleteTopicById" className="delete-but">
+                    <button type="button" className="delete-but" data-id=${id}>
                         <span className="material-symbols-outlined">
                             delete
                         </span>
-                    </div>
+                    </button>
                 </div>
             </div>
         `

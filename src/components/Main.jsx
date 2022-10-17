@@ -1,16 +1,20 @@
 import React, {useEffect, useState} from 'react'
-import {goodRusCounter} from "../grcounter";
-import {topicsTemplate} from "./topics.template";
-
-
-var parse = require('html-react-parser');
+import {topicsTemplate} from "../controllers/topics.template";
+import {deleteTopicById} from "../controllers/Topics";
 
 const Main = () => {
     const [topics, setTopics] = useState([]);
     useEffect(() => {topicsTemplate().then(data => {
-        console.log(data)
         setTopics(data)
     })},[])
+
+    useEffect(() => {
+        const list = document.getElementsByClassName("delete-but")
+        for (let i = 0; i < list.length; i++) {
+            list.item(i).addEventListener("click", () => {deleteTopicById(list.item(i).dataset.id)})
+        }
+    })
+
 
     return (<div>
             <a className="new-topic" href="/new">

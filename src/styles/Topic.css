@@ -1,0 +1,45 @@
+.topic-page {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 89.9494%;
+    background: url("https://i.pinimg.com/originals/20/99/f2/2099f2dda704cb708fe20347afb964ba.jpg");
+}
+.topic-page-insides {
+    margin: 10px 300px;
+    background: bisque;
+    border: 2px solid #000000;
+}
+.topic-page-insides hr {
+    border: 2px solid #b6ada7;
+    color: #b6ada7;
+    width: 100%;
+    background: #b6ada7;
+}
+.topic-page-insides-topic hr {
+    border: 1px solid #b6ada7;
+    color: #b6ada7;
+    border-radius: 1px;
+    width: 90%;
+    background: #b6ada7;
+}
+.topic-page-insides-topic-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+.topic-page-insides-topic-title {
+    font-size: 2em;
+    font-weight: bolder;
+}
+.topic-page-insides-topic-author {
+    position: relative;
+    top: 10px;
+    font-size: 24px;
+}
+.topic-page-insides-topic-description {
+    line-break: anywhere;
+    font-size: 20px;
+    margin: 0 40px 20px;
+}
+

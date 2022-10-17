@@ -1,0 +1,37 @@
+.topic-page-posts-post {
+    background: rgba(161, 255, 161, 0.44);
+    border: 2px solid green;
+
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+.topic-page-posts-post-author {
+    text-decoration: underline;
+    color: #c343ff;
+    font-size: 20px;
+}
+.topic-page-posts-post-text {
+    line-break: anywhere;
+    width: 100%;
+    padding-top: 10px;
+}
+.topic-page-posts-post-text-arrow {
+    font-size: 24px;
+}
+.topic-page-posts-post-button {
+    position: relative;
+    left: 97%;
+    top: 10px;
+    background: none;
+    border: none;
+}
+.topic-page-posts-post-button:hover {
+    cursor: pointer;
+}
+#delete-button:active {
+    color: red;
+}
+#edit-button:active {
+    color: darkgoldenrod;
+}

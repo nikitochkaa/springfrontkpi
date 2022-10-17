@@ -83,7 +83,9 @@
 
 .delete-but{
     float: right;
-    margin-left: 10px;
+    margin-left: 5px;
+    background: none;
+    border: none;
 }
 .delete-but:hover{
     cursor: pointer;

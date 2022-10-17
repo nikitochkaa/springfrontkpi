@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "signuppage.css";
+@import "Signuppage.css";
 @import "News.css";
-@import "topnav.css";
+@import "Topnav.css";
 @import "Main.css";
 @import "NewTopic.css";
-
-
-
+@import "Topic.css";
+@import "Posts.css";
+@import "Post.css";
 
 .loginpage {
   margin: 0;
