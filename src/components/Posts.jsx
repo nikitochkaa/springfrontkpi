@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from "./Post.";
+import Post from "./Post";
 import {addNewPost} from "../controllers/Posts";
 import {useParams} from "react-router-dom";
 
